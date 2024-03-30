@@ -166,7 +166,7 @@ export default function Mint() {
                 onClick={publicMintHandler}
               >
                 {" "}
-                Mint
+                {isMinting ? 'Minting...' : 'Mint'}
               </button>
             ):
             address && isWlState? (
@@ -175,7 +175,7 @@ export default function Mint() {
                 onClick={whitelistMindHnadler}
               >
                 {" "}
-                Mint
+                {isMinting ? 'Minting...' : 'Mint'}
               </button>
             ) : (
               <button className="px-10 py-3 bg-gray-700/60 text-white font-semibold cursor-not-allowed w-full">
